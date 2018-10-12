@@ -1,9 +1,12 @@
-# Hyperledger-Fabric Chaincode
+﻿# Hyperledger-Fabric Chaincode
 
- - Chaincode Study
+ 1. [Chaincode Study][1]
+ 
 
-[Hyperledger-Fabric Chaincode][1]
 
-## made by Johnny Kuo @ 2018/10 in pega 
+----------
+ *made by Johnny Kuo @ 2018/10 in pega* 
 
-  [1]: Hyperledger-Fabric Chaincode.md
+
+
+  [1]: Hyperledger-Fabric%20Chaincode.md
