@@ -260,9 +260,9 @@ CloseOpenAuctions
   [2]: http://1.bp.blogspot.com/-D1TvAfHOYJU/UDRMyKOiT9I/AAAAAAAACGw/wJNSyCfr0Yg/s640/0_1315316512jhTH.gif
   [3]: http://172.18.136.123:5984/_utils/#/database/mychannel_fabcar/_all_docs
   [4]: https://mikespook.com/learning-go/
-  [5]: ./CC_Lifecycle.jpg
+  [5]: CC_Lifecycle.jpg
   [6]: https://hyperledger-fabric.readthedocs.io/en/release-1.1/chaincode4ade.html#chaincode-api
-  [7]: ./basic.go
+  [7]: basic.go
   [8]: https://godoc.org/github.com/hyperledger/fabric/core/chaincode/shim#Chaincode
   [9]: https://github.com/hyperledger/fabric-samples/blob/release-1.1/chaincode/fabcar/go/fabcar.go
   [10]: https://github.com/hyperledger/fabric-samples/blob/release-1.1/chaincode/marbles02/go/marbles_chaincode.go
