@@ -304,6 +304,9 @@ CloseOpenAuctions
 
 ![dataflow][15]
 
+## Blockchain Structure
+
+![此处输入图片的描述][16]
 
   [1]: http://2.bp.blogspot.com/-sO1yDmK_yT8/U2NC8WyonCI/AAAAAAAAeHA/psRndXmCIvM/s1600/NoSQL_DB_MongoDB.png
   [2]: http://1.bp.blogspot.com/-D1TvAfHOYJU/UDRMyKOiT9I/AAAAAAAACGw/wJNSyCfr0Yg/s640/0_1315316512jhTH.gif
@@ -320,6 +323,7 @@ CloseOpenAuctions
   [13]: AuctionFlow2.png
   [14]: dataTx.png
   [15]: dataflow.png
+  [16]: Blockchain-Structure.jpg
   
 ## Reference
 
