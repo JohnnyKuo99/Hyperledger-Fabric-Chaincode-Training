@@ -1,4 +1,4 @@
-﻿# Hyperledger-Fabric Training
+﻿# Hyperledger-Fabric Chaincode Training
 
  1. [Chaincode Study][1]
  
