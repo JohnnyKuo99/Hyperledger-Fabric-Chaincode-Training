@@ -191,31 +191,41 @@ gPZsgZjzNTkJgglZ7VgJLVFOuHgKWT9GbzhwBgIgE2YWoDpG0HuhB66UzlA+6QzJ 
 ----------
 
 ### Sample: Fabcar
-**Car** 
- - Make 
- - Model 
- - Colour 
- - Owner
 
-**Methods**
- - queryCar() 
- - initLedger() 
- - createCar() 
- - queryAllCars() 
- - changeCarOwner()
+ - Car Struct
+ ```
+ Make 
+ Model 
+ Colour 
+ Owner
+```
+
+ - Methods
+ ```
+ queryCar() 
+ initLedger() 
+ createCar() 
+ queryAllCars() 
+ changeCarOwner()
+```
 
 [Fabcar][9]
 
 ----------
 
 ### Sample: Marble02
-marble
+
+ - marble Struct
+```
 	ObjectType
 	Name      
 	Color     
 	Size      
 	Owner 
-	
+```
+
+ - Methods
+```
 initMarble()
 transferMarble()
 transferMarblesBasedOnColor()
@@ -225,6 +235,7 @@ queryMarblesByOwner()
 queryMarbles()
 getHistoryForMarble()
 getMarblesByRange()
+```
 
 [Marble02][10]
 
@@ -293,3 +304,31 @@ CloseOpenAuctions
   [13]: AuctionFlow2.png
   [14]: dataTx.png
   [15]: dataflow.png
+  
+## Reference
+
+ - [CouchDB Admin][3]
+
+ - [《学习GO语言》][4]
+
+ - [SHIM][8]
+
+ - [Chaincode for develop][6]
+
+ - [Sample: Fabcar][9]
+
+ - [Sample: Marble02][10]
+
+ - [Sample: Auction][12]
+
+## Server Info
+
+ - Test Server
+ 
+ IP: 172.18.136.123
+ 
+ ~/chaincode
+ 
+ WINSCP
+ 
+ SAMBA
