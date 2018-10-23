@@ -81,6 +81,21 @@
 ### Chaincode Lifecycle
 
 ![ChainCode Lifecycle][5]
+
+----------
+
+## Indorsement Policy
+
+### 節點交易驗證規則
+
+ - 背書數量
+ 
+ - 來自預期來源
+ 
+ - 背書是否有效
+ 
+OR ('Org1.member', OR ('Org2.member, 'Org3.member))
+
 ----------
 
 ### Chaincode for Development
