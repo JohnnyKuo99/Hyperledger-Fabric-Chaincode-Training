@@ -1,6 +1,6 @@
 ﻿# Hyperledger-Fabric Chaincode
 ## CouchDB
-### CouchDB分類
+### NoSQL DB分類
 
 ![NoSQL_DB][1]
 
@@ -11,6 +11,7 @@
 ![CAP][2]
 
 ----------
+### Main Features
 
  - **文件儲存**
 
@@ -47,22 +48,32 @@
 ## Go Lang
 
  - a programming language created in 2009 by Google 
+ 
  - a statically typed, compiled language in the tradition of C 
+ 
  - with memory safety, garbage collection, structural typing, and CSP-style concurrency.
+ 
  - The compiler, tools, and source code are all free and open source. 
+ 
  - Go was awarded TIOBE programming language of the year 2016.
+ 
 
 [《学习GO语言》][4]
 
 ----------
 
 ## Chaincode
+
 **What is Chaincode**
 
  - 一段由程式語言編寫，並能實現預定義介面的程式。
+ 
  - 運行在一個受保護的Docker容器中，與背書節點的運行互相隔離。
+ 
  - 可通過應用提交的交易對帳本狀態初始化並進行管理。
+ 
  - 處理由網路中的成員一致認可的業務邏輯（智慧合約）
+ 
  - 創建的（帳本）狀態是與其他chaincode互相隔離，不能被其他chaincode直接訪問
 
 ----------
@@ -73,6 +84,7 @@
 ----------
 
 ### Chaincode for Development
+
 [Chaincode for develop][6]
 
  - Go
@@ -84,48 +96,56 @@
 ----------
 
 ### SHIM ChaincodeStubInterface
+
+[SHIM][8]
+
 **獲得調用的參數**
 
  - GetArgs() [][]byte 
  
-	以byte數組的數組的形式獲得傳入的參數列表
+	*以byte數組的數組的形式獲得傳入的參數列表*
+	
 
  - GetStringArgs() []string 
  
-	以字符串數組的形式獲得傳入的參數列表
+	*以字符串數組的形式獲得傳入的參數列表*
+	
 
  - GetFunctionAndParameters() (string, []string) 
  
-	將字符串數組的參數分為兩部分，數組第一個字是Function，剩下的都是Parameter
+	*將字符串數組的參數分為兩部分，數組第一個字是Function，剩下的都是Parameter*
+	
 
  - GetArgsSlice() ([]byte, error) 
  
-	以byte切片的形式獲得參數列表
+	*以byte切片的形式獲得參數列表*
+	
 
-[SHIM][8]
-
-----------
-
-### SHIM Library
 **增刪改查State DB**
 
  - PutState(key string, value []byte) error 
+ 
  - GetState(key string)([]byte, error) 
+ 
  - DelState(key string) error
+ 
 
 **復合鍵的處理 (ref: mable02 example)**
 
  - CreateCompositeKey(objectType string, attributes []string) (string, error)
  
-*用U+0000分割各個字段*
+    *用U+0000分割各個字段*
+    
 
  - SplitCompositeKey(compositeKey string) (string, []string, error)
  
-*用U+0000 Split開，結果第一個是objectType，其他是復合鍵用到的列的值。*
+    *用U+0000 Split開，結果第一個是objectType，其他是復合鍵用到的列的值。*
+    
 
  - GetStateByPartialCompositeKey(objectType string, keys []string) (StateQueryIteratorInterface, error)
  
-*雖然是部分復合鍵的查詢，但是不允許拿後面部分的復合鍵進行匹配，必須是前面部分*
+    *雖然是部分復合鍵的查詢，但是不允許拿後面部分的復合鍵進行匹配，必須是前面部分*
+    
 
 **獲得當前用戶GetCreator() ([]byte, error)**
 
@@ -156,11 +176,13 @@ gPZsgZjzNTkJgglZ7VgJLVFOuHgKWT9GbzhwBgIgE2YWoDpG0HuhB66UzlA+6QzJ 
 
  - GetQueryResult(query string) (StateQueryIteratorInterface, error)
  
-    富查詢CouchDB使用Mango查詢
+    *富查詢CouchDB使用Mango查詢*
+    
 
  - GetHistoryForKey(key string) (HistoryQueryIteratorInterface, error)
  
     對同一個數據（也就是Key相同）的更改
+    
 
 **調用別的鏈代碼**
  
