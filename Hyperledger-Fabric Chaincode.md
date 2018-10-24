@@ -76,26 +76,6 @@
  
  - 創建的（帳本）狀態是與其他chaincode互相隔離，不能被其他chaincode直接訪問
 
-----------
-
-### Chaincode Lifecycle
-
-![ChainCode Lifecycle][5]
-
-----------
-
-## Endorsement Policy
-
-### 節點交易驗證規則
-
- - 背書數量
- 
- - 來自預期來源
- 
- - 背書是否有效
-
-
-OR ('Org1.member', OR ('Org2.member, 'Org3.member))
 
 ----------
 
@@ -294,6 +274,28 @@ CloseAuction
 CloseOpenAuctions
 ```
 ![AuctionFlow2][13]
+
+----------
+
+### Chaincode Lifecycle
+
+![ChainCode Lifecycle][5]
+
+----------
+
+## Endorsement Policy
+
+### 節點交易驗證規則
+
+ - 背書數量
+ 
+ - 來自預期來源
+ 
+ - 背書是否有效
+
+
+OR ('Org1.member', OR ('Org2.member, 'Org3.member))
+
 ----------
 
 ## Transaction
